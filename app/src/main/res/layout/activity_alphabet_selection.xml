@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE5E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Верхняя панель: Кнопки и Логотип -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBackToAlphabet"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="Назад"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:backgroundTint="#FEFFAF"
+                app:cornerRadius="20dp"
+                app:strokeColor="#999D4F"
+                app:strokeWidth="1dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <!-- Контейнер для логотипа по центру -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_constraintStart_toEndOf="@id/btnBackToAlphabet"
+                app:layout_constraintEnd_toStartOf="@id/btnExercises"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nihon Kana"
+                    android:textColor="#7B585A"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnExercises"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="Упражнения"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:backgroundTint="#FEFFAF"
+                app:cornerRadius="20dp"
+                app:strokeColor="#999D4F"
+                app:strokeWidth="1dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tvAlphabetTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите ряд хираганы"
+            android:textSize="20sp"
+            android:textColor="#7B585A"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal" />
+
+        <!-- Кнопки рядов -->
+        <!-- Для кнопок используем MaterialButton для легкого создания рамок и скруглений -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowA"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="あ　い　う　え　お"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowK"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="か　き　く　け　こ"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowS"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="さ　し　す　せ　そ"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowT"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="た　ち　つ　て　と"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowN"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="な　に　ぬ　ね　の"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowH"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="は　ひ　ふ　へ　ほ"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowM"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="ま　み　む　め　も"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowY"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="や　ゆ　よ"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowR"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="ら　り　る　れ　ろ"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowW"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="わ　を"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRowNOnly"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:text="ん"
+            android:textSize="20sp"
+            android:textColor="#999D4F"
+            app:backgroundTint="#FEFFAF"
+            app:cornerRadius="6dp"
+            app:strokeColor="#999D4F"
+            app:strokeWidth="1dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvNExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Символ ん вынесен отдельно, потому что он не образует стандартный пятигласный ряд, как остальные знаки хираганы."
+            android:textSize="14sp"
+            android:textColor="#7B585A"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+    </LinearLayout>
+</ScrollView>

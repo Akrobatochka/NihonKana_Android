@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFFAF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExitExercise"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Выход"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:backgroundTint="#FDE5E8"
+        app:cornerRadius="24dp"
+        app:strokeColor="#7B585A"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Вопрос 1 из 50"
+        android:textColor="#999D4F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Правильно: 0 | Ошибок: 0"
+        android:textColor="#999D4F"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="あ"
+        android:textColor="#000000"
+        android:textSize="100sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption1"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="TO"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#999D4F"
+        app:cornerRadius="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption2"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="SHI"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#999D4F"
+        app:cornerRadius="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption3"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="A"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#999D4F"
+        app:cornerRadius="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption4"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="I"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#999D4F"
+        app:cornerRadius="8dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/ivCatLuck"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom|end"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dialog_udachi" />
+    </FrameLayout>
+
+</LinearLayout>

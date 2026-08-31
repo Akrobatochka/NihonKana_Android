@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE5E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvProgressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мой прогресс"
+            android:textSize="30sp"
+            android:textColor="#7B585A"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tvTotalExercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пройдено упражнений: 0"
+            android:textSize="20sp"
+            android:textColor="#7B585A"
+            android:background="#FEFFAF"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvAveragePercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Средний результат: 0%"
+            android:textSize="20sp"
+            android:textColor="#7B585A"
+            android:background="#FEFFAF"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvCorrectAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Правильных ответов: 0"
+            android:textSize="20sp"
+            android:textColor="#7B585A"
+            android:background="#FEFFAF"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvWrongAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ошибок: 0"
+            android:textSize="20sp"
+            android:textColor="#7B585A"
+            android:background="#FEFFAF"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvLearnedSymbols"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Изучено символов: 0"
+            android:textSize="20sp"
+            android:textColor="#7B585A"
+            android:background="#FEFFAF"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tvRowsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прогресс по рядам ▼"
+            android:textSize="24sp"
+            android:textColor="#7B585A"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutRowsProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvSymbolsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Прогресс по символам ▼"
+            android:textSize="24sp"
+            android:textColor="#7B585A"
+            android:padding="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutSymbolsProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvMistakesHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Частые ошибки ▼"
+            android:textSize="24sp"
+            android:textColor="#7B585A"
+            android:padding="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutMistakesProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnBackFromProgress"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:text="Назад"
+            android:textSize="18sp"
+            android:textColor="#999D4F"
+            android:backgroundTint="#FEFFAF" />
+
+    </LinearLayout>
+</ScrollView>
